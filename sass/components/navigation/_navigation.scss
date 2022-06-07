@@ -1,12 +1,35 @@
-.main-navigation {
-	display: block;
-	width: 100%;
+* {
+	scroll-behavior: smooth;
+}
 
+.site-header {
+	height: 60px;
+    width: 100%;
+    //background-color: #eedbff;
+	display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+
+	.site-branding{
+		float: left;
+		margin: 5px 15px;
+		height:50px;
+		width:50px;
+	}
+}
+
+.main-navigation {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		//padding: 20px;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -50,8 +73,9 @@
 	}
 
 	li {
-		position: relative;
-
+		display: block;
+		//position: relative;
+		margin: 0 10px;
 		&:hover > a,
 		&.focus > a {
 		}
@@ -70,9 +94,18 @@
 }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+.menu-toggle {
 	display: block;
+	position: relative;
+	background-color: transparent;
+	border: none;
+}
+
+.main-navigation.toggled {
+	display: flex;
+	ul {
+		display: block;
+	}
 }
 
 @media screen and (min-width: 37.5em) {

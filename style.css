@@ -648,6 +648,7 @@ textarea {
   list-style: none;
   margin: 0;
   padding-left: 0;
+  padding: 20px;
 }
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -683,16 +684,30 @@ textarea {
 /* Small menu. */
 .menu-toggle {
   display: block;
-  position: relative;
+  position: absolute;
+  right: 2px;
   background-color: transparent;
   border: none;
 }
 
 .main-navigation.toggled {
-  display: flex;
+  display: block;
+  right: 0px;
 }
 .main-navigation.toggled ul {
+  width: 100%;
   display: block;
+  position: absolute;
+  right: 0;
+  margin: 8vh 0;
+  background-color: white;
+}
+
+.burger-menu {
+  display: flex;
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #40282C;
 }
 
 @media screen and (min-width: 37.5em) {

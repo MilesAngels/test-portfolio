@@ -675,7 +675,6 @@ textarea {
   left: auto;
 }
 .main-navigation li {
-  display: block;
   margin: 0 10px;
 }
 .main-navigation a {
@@ -697,16 +696,16 @@ textarea {
 .main-navigation.toggled {
   display: block;
   right: 0px;
-  transform: translate3d(-1px, 0, 0);
-  transition: transform 0.35s;
+  transform: translateX(-1%);
+  transition: transform 2s ease-in;
 }
 .main-navigation.toggled ul {
-  width: 50%;
+  width: 100%;
   display: block;
   position: absolute;
   height: 100vh;
   right: 0;
-  margin: 48px 0 0 1px;
+  margin: 48px 0 0 0px;
   background-color: white;
   text-align: center;
 }

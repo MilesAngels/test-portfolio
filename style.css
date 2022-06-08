@@ -696,8 +696,6 @@ textarea {
 .main-navigation.toggled {
   display: block;
   right: 0px;
-  transform: translateX(-1%);
-  transition: transform 2s ease-in;
 }
 .main-navigation.toggled ul {
   width: 100%;
@@ -711,6 +709,8 @@ textarea {
 }
 .main-navigation.toggled ul li a {
   padding: 30px;
+  transform: translateX(-1%);
+  transition: transform 0.35s ease-in;
 }
 
 .burger-menu {

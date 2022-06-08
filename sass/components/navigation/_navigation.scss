@@ -3,16 +3,17 @@
 }
 
 .site-header {
-	height: 8vh;
+	height: 60px;
     width: 100%;
 	display: flex;
     position: sticky;
-    top: 0;
+    //top: 0;
+	padding-top: 0.75em;
     z-index: 1;
 	background-color: #F2A7A7;
 	.site-branding{
 		float: left;
-		margin: 5px 15px;
+		margin: 0px 15px;
 		height:50px;
 		width:50px;
 	}
@@ -94,25 +95,35 @@
 /* Small menu. */
 .menu-toggle {
 	display: block;
-	//width: ;
+	padding: 16px 16px 18px 16px;
 	position: absolute;
 	right: 2px;
-	background-color: transparent;
+	margin-top: -10px;
+	background-color: white;
 	border: none;
+	border-radius: 0;
 }
 
 .main-navigation.toggled {
 	display: block;
 	right: 0px;
-	
+	transform: translate3d(-1px, 0, 0);
+  	transition: transform 0.35s;
 	ul {
-		width: 100%;
+		width: 50%;
 		display: block;
 		position: absolute;
 		height: 100vh;
 		right: 0;
-		margin: 8vh 0;
+		margin: 48px 0 0 1px;
 		background-color: white;
+		text-align: center;
+	
+		li a {
+			padding: 30px;
+			// transform: translateY(100%);
+			// transition: transform 2s ease-in;
+		}
 	}
 }
 

@@ -624,12 +624,13 @@ textarea {
 }
 
 .site-header {
-  height: 60px;
+  height: 8vh;
   width: 100%;
   display: flex;
   position: sticky;
   top: 0;
   z-index: 1;
+  background-color: #F2A7A7;
 }
 .site-header .site-branding {
   float: left;
@@ -698,6 +699,7 @@ textarea {
   width: 100%;
   display: block;
   position: absolute;
+  height: 100vh;
   right: 0;
   margin: 8vh 0;
   background-color: white;
@@ -744,7 +746,7 @@ textarea {
 /* Posts and pages
 --------------------------------------------- */
 body {
-  background: linear-gradient(180deg, #F2A7A7 0%, #F2C1B6 100%);
+  background-color: white;
 }
 
 .sticky {

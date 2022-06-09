@@ -12,16 +12,44 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="footer-container">
-		<?php
-            wp_nav_menu(array(
-                'menu' => 'Nav Menu',
-                'theme_location' => 'footer-menu',
-                'menu_class' => 'footer-menu',
-                'menu_id' => 'footer-id'
-            ))
-        ?>
-		</div><!-- .site-info -->
+        <section class="footer-column">
+            <div class="footer-container">
+                <h4><strong>Pages</strong></h4>
+            <?php
+                wp_nav_menu(array(
+                    'menu' => 'Nav Menu',
+                    'theme_location' => 'footer-menu',
+                    'menu_class' => 'footer-menu',
+                    'menu_id' => 'footer-id'
+                ))
+            ?>
+            </div><!-- .site-info -->
+            <div class="footer-container">
+                <h4><strong>Other Stuff</strong></h4>
+                <?php
+                    wp_nav_menu(array(
+                        'menu' => 'Nav Menu',
+                        'theme_location' => 'footer-menu2',
+                        'menu_class' => 'footer-menu',
+                        'menu_id' => 'footer-id'
+                    ))
+                ?>
+            </div>
+            <div class="footer-container">
+                <h4><strong>Social Media</strong></h4>
+                <?php
+                    wp_nav_menu(array(
+                        'menu' => 'Nav Menu',
+                        'theme_location' => 'footer-menu3',
+                        'menu_class' => 'footer-menu',
+                        'menu_id' => 'footer-id'
+                    ))
+                ?>
+            </div>
+        </section>
+        <div class="author-info">
+            <p>Made by Miles Marie Angels</p>
+        </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

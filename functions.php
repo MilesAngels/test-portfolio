@@ -53,6 +53,9 @@ function milesangels_portfolio_setup() {
 			'footer-menu' => esc_html__('Footer Menu', 'milesangels-portfolio')
 		)
 	);
+	//Register extra footer menu
+	register_nav_menu('footer-menu2', 'Footer Menu 2');
+	register_nav_menu('footer-menu3', 'Footer Menu 3');
 
 	/*
 		* Switch default core markup for search form, comment form, and comments

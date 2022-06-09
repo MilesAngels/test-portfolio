@@ -7,7 +7,8 @@
  *
  * @package test-portfolio
  */
-
+ 
+ get_header();
  ?>
 
  <section class="author-info">
@@ -16,3 +17,5 @@
      <p>Hey, I'm <strong>Miles</strong>.</p>
      <p>I am a <strong>Wordpress</strong> developer.</p>
  </section>
+
+ <?php get_footer();?>

@@ -3,7 +3,7 @@
         <p>Hey, I'm <strong>Miles</strong>.</p>
         <p>I am a <strong>Wordpress</strong> developer.</p>
         <button>
-            <a href="#">See My Work</a>
+            <a href="<?php echo get_permalink('/about');?>">See My Work</a>
         </button>
     </aside>
     <div class="image-container">

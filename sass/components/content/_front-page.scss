@@ -45,17 +45,18 @@
 @media screen and (max-width: 37.5em) {
 	.author-info {
         display: block;
-        height: calc(100vh - 30%);
+        height: 100vh;
         .image-container, .author {
             text-align: center;
         }
 
-        .image-container {
-            margin: 30% 0 0 0;
+        .author {
+            margin: 20% 0 0 0;
         }
 
-        .author {
-            margin: 0 0 30% 0;
+        .image-container
+         {
+            margin: 0 0 20% 0;
         }
         
     }

@@ -48,7 +48,7 @@
             </div>
         </section>
         <div class="copyright">
-            <p>Made by Miles Marie Angels</p>
+            <p>&copy; Miles Marie Angels</p>
         </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

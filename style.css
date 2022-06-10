@@ -636,6 +636,7 @@ body {
   align-items: center;
   padding-top: 0.75em;
   z-index: 1;
+  border-bottom: 1px solid #40282C;
 }
 .site-header .site-branding {
   float: left;
@@ -875,18 +876,24 @@ body {
 @media screen and (max-width: 37.5em) {
   .author-info {
     display: block;
-    height: calc(100vh - 30%);
+    height: 100vh;
   }
   .author-info .image-container, .author-info .author {
     text-align: center;
   }
-  .author-info .image-container {
-    margin: 30% 0 0 0;
-  }
   .author-info .author {
-    margin: 0 0 30% 0;
+    margin: 20% 0 0 0;
+  }
+  .author-info .image-container {
+    margin: 0 0 20% 0;
   }
 }
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {

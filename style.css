@@ -623,6 +623,11 @@ textarea {
   scroll-behavior: smooth;
 }
 
+body {
+  height: calc(100vh + 70px);
+  background: linear-gradient(180deg, #F2A7A7 0%, #F2C1B6 100%);
+}
+
 .site-header {
   height: 70px;
   width: 100%;
@@ -631,7 +636,6 @@ textarea {
   align-items: center;
   padding-top: 0.75em;
   z-index: 1;
-  background-color: #F2A7A7;
 }
 .site-header .site-branding {
   float: left;
@@ -681,6 +685,10 @@ textarea {
 .main-navigation a {
   display: block;
   text-decoration: none;
+  color: #40282C;
+}
+.main-navigation a:hover {
+  font-weight: 500;
 }
 /* Small menu. */
 .menu-toggle {
@@ -753,11 +761,12 @@ textarea {
 }
 
 .site-footer {
-  background-color: aliceblue;
+  background-color: #40282C;
   width: 100%;
   height: auto;
   padding: 1em 1em;
   text-align: center;
+  color: #fff;
 }
 
 .footer-column {
@@ -781,9 +790,10 @@ textarea {
   list-style-type: none;
   text-decoration: none;
   line-height: 2em;
+  color: #fff;
 }
-.footer-column .author-info p {
-  padding: 30px 0;
+.footer-column .copyright p {
+  padding: 30px 0 0 0;
 }
 
 @media screen and (max-width: 37.5em) {
@@ -827,12 +837,56 @@ body {
 .author-info {
   display: flex;
   width: 100%;
-  height: 50vh;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
-.author-info .profile-image {
-  width: 500px;
+.author-info .image-container {
+  padding: 5%;
+}
+.author-info .image-container .profile-image {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+.author-info .author {
+  padding: 5%;
+  color: white;
+}
+.author-info .author p {
+  color: #40282C;
+  line-height: 1em;
+}
+.author-info .author button {
+  border: none;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  background: #40282C;
+}
+.author-info .author button a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
+@media screen and (max-width: 37.5em) {
+  .author-info {
+    display: block;
+    height: calc(100vh - 30%);
+  }
+  .author-info .image-container, .author-info .author {
+    text-align: center;
+  }
+  .author-info .image-container {
+    margin: 30% 0 0 0;
+  }
+  .author-info .author {
+    margin: 0 0 30% 0;
+  }
+}
 /* Comments
 --------------------------------------------- */
 .comment-content a {

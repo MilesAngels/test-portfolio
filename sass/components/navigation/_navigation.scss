@@ -1,5 +1,11 @@
 * {
 	scroll-behavior: smooth;
+	//outline: solid 2px red;
+}
+
+body {
+	height: calc(100vh + 70px);
+	background: linear-gradient(180deg, #F2A7A7 0%, #F2C1B6 100%);
 }
 
 .site-header {
@@ -11,7 +17,7 @@
 	align-items: center;
 	padding-top: 0.75em;
     z-index: 1;
-	background-color: #F2A7A7;
+	//background-color: #F2A7A7;
 	.site-branding{
 		float: left;
 		margin: 0px 15px;
@@ -84,6 +90,11 @@
 	a {
 		display: block;
 		text-decoration: none;
+		color: #40282C;
+		
+		&:hover {
+			font-weight: 500;
+		}
 	}
 
 	.current_page_item > a,

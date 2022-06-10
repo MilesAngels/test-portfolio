@@ -14,7 +14,7 @@
 	<footer id="colophon" class="site-footer">
         <section class="footer-column">
             <div class="footer-container">
-                <h4><strong>Pages</strong></h4>
+                <h3>Pages</h3>
             <?php
                 wp_nav_menu(array(
                     'menu' => 'Nav Menu',
@@ -25,7 +25,7 @@
             ?>
             </div><!-- .site-info -->
             <div class="footer-container">
-                <h4><strong>Other Stuff</strong></h4>
+                <h3>Other Stuff</h3>
                 <?php
                     wp_nav_menu(array(
                         'menu' => 'Nav Menu',
@@ -36,7 +36,7 @@
                 ?>
             </div>
             <div class="footer-container">
-                <h4><strong>Social Media</strong></h4>
+                <h3>Social Media</h3>
                 <?php
                     wp_nav_menu(array(
                         'menu' => 'Nav Menu',
@@ -47,7 +47,7 @@
                 ?>
             </div>
         </section>
-        <div class="author-info">
+        <div class="copyright">
             <p>Made by Miles Marie Angels</p>
         </div>
 	</footer><!-- #colophon -->
